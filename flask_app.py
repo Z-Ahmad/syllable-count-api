@@ -3,6 +3,10 @@ import syllables
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return '<p>SEND A POST REQUEST w/ JSON OBJECT IN THIS FORMAT: {"word": "example"}<p>'
+
 @app.route('/syllables', methods=['POST'])
 def count_syllables():
     word = request.json['word']
