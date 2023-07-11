@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return '<p>SEND A POST REQUEST w/ JSON BODY IN THIS FORMAT: {"word": "example"}<p>'
+    return '<p>SEND A POST REQUEST TO /syllables WITH JSON BODY IN THIS FORMAT: {"word": "example"}<p>'
 
 @app.route('/syllables', methods=['POST'])
 def count_syllables():
