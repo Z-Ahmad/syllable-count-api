@@ -8,7 +8,7 @@ cmu_dict = cmudict.dict()
 
 @app.route("/")
 def home():
-    return '<p>SEND A POST REQUEST TO /syllables WITH JSON BODY IN THIS FORMAT: {"word": "example"}<p>'
+    return '<p>SEND A POST REQUEST TO /syllable WITH JSON BODY IN THIS FORMAT: {"word": "example"}<p>'
 
 @app.route('/syllable', methods=['POST'])
 def get_syllable_count():
